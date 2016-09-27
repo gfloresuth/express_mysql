@@ -1,10 +1,6 @@
-var Products = {
-    model: null,
-    init: function(bookshelf){
-        this.model = bookshelf.Model.extend({
+module.exports = function(bookshelf){
+        var model = bookshelf.Model.extend({
         tableName: 'products'
-        });        
-    }
-}
-
-module.exports = Products;
+        }); 
+        return model;       
+};

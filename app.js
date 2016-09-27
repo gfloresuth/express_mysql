@@ -3,9 +3,10 @@ var bodyParser = require('body-parser');
 var db = require('./libs/db.js');
 var modelProducts = require('./models/products.js');
 
-modelProducts.init(db);
+var oProducts = new modelProducts(db);
 
-//console.log(modelProducts.model);
+
+console.log(oProducts);
 
 
 
@@ -22,7 +23,7 @@ app.set('view engine','html');
 app.set('devel',false);
 
 app.get('/products/',function(req,res){
-    modelProducts.model.fetchAll().then(function(product){
+    oProducts.fetchAll().then(function(product){
         res.json(product);
     });
 
