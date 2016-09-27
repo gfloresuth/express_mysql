@@ -1,0 +1,34 @@
+{
+  "name": "express_mysql",
+  "version": "1.0.0",
+  "description": "Express server with mysql",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gfloresuth/express_mysql.git"
+  },
+  "keywords": [
+    "express",
+    "expressjs",
+    "mysql"
+  ],
+  "author": "Gustavo Adolfo Flores González",
+  "license": "ISC",
+  "devDependencies":{
+    "knex":"latest",
+    "bookshelf":"latest"
+  },
+  "dependencies":{
+    "body-parser":"latest",
+    "express":"latest",
+    "atpl":"latest",
+    "mysql":"latest"
+  },
+  "bugs": {
+    "url": "https://github.com/gfloresuth/express_mysql/issues"
+  },
+  "homepage": "https://github.com/gfloresuth/express_mysql#readme"
+}
