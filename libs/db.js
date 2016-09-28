@@ -1,9 +1,9 @@
 var knex = require('knex')({
   client: 'mysql',
   connection: {
-    host     : '127.0.0.1',
+    host     : 'localhost',
     user     : 'root',
-    password : '$Gflores016',
+    password : 'usbw',
     database : 'mini_store',
     charset  : 'utf8'
   }

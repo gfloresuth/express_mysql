@@ -6,7 +6,7 @@ var modelProducts = require('./models/products.js');
 var oProducts = new modelProducts(db);
 
 
-console.log(oProducts);
+//console.log(oProducts);
 
 
 
@@ -23,8 +23,11 @@ app.set('view engine','html');
 app.set('devel',false);
 
 app.get('/products/',function(req,res){
-    oProducts.fetchAll().then(function(product){
-        res.json(product);
+    oProducts.fetchAll().then(function(products){
+        res.json(products);
+    }).catch(function(error){
+        console.log('ERROR IN QUERY OR PRODUCTS ' + __dirname+'/app.js');
+        res.send('Error');
     });
 
 });

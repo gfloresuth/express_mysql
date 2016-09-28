@@ -1,3 +1,4 @@
+// public/js/libs/products.js
 var Products = {
     listAll: function(divId){
         var serviceUrl = '/products/';
